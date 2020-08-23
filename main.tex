@@ -1,0 +1,25 @@
+\documentclass{report}
+
+\usepackage[english]{babel}
+\usepackage[useregional]{datetime2}
+
+\usepackage{abstract}
+\usepackage{blindtext}
+\usepackage{microtype}
+\usepackage{multicol}
+
+\begin{document}
+
+\include{boundaries/title}
+\include{boundaries/abstract}
+\include{boundaries/toc}
+
+\begin{multicols}{2}
+  \setcounter{page}{1}
+  \include{content/#1-introduction}
+  \include{content/#2-methods}
+  \include{content/#3-results}
+  \include{content/#4-discussion}
+\end{multicols}
+
+\end{document}
