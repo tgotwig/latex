@@ -1,12 +1,20 @@
-\documentclass{report}
+\documentclass[twocolumn]{report}
 
 \usepackage[english]{babel}
+\usepackage[font=small,labelfont=bf]{caption} 
 \usepackage[useregional]{datetime2}
 
 \usepackage{abstract}
+\usepackage{booktabs}
 \usepackage{blindtext}
 \usepackage{microtype}
-\usepackage{multicol}
+\usepackage{tabularx}
+
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
+\newenvironment{Table}
+   {\par\bigskip\noindent\minipage{\columnwidth}\centering}
+   {\endminipage\par\bigskip}
 
 \begin{document}
 
@@ -14,12 +22,10 @@
 \include{boundaries/abstract}
 \include{boundaries/toc}
 
-\begin{multicols}{2}
-  \setcounter{page}{1}
-  \include{content/#1-introduction}
-  \include{content/#2-methods}
-  \include{content/#3-results}
-  \include{content/#4-discussion}
-\end{multicols}
+\setcounter{page}{1}
+\include{content/#1-introduction}
+\include{content/#2-methods}
+\include{content/#3-results}
+\include{content/#4-discussion}
 
 \end{document}
