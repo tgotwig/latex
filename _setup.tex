@@ -1,0 +1,25 @@
+\usepackage[english]{babel}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[useregional]{datetime2}
+
+\usepackage{abstract}
+\usepackage{booktabs}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{tabularx}
+
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=cyan,
+}
+
+\newenvironment{Table}
+{\par\bigskip\noindent\minipage{\columnwidth}\centering}
+{\endminipage\par\bigskip}
+
+\urlstyle{same}

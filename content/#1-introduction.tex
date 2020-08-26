@@ -3,7 +3,7 @@
 \section{tables}
 
 \subsection{table for one column}
-\blindtext[3]
+\blindtext[3] See table~\ref{tab:sec} on page~\pageref{tab:sec}
 \begin{Table}
   \begin{tabularx}{\textwidth}[htb]{X X}
     \toprule
@@ -13,12 +13,14 @@
     3.1 & 3.2 \\
     \bottomrule
   \end{tabularx}
-  \captionof{table}{A test table}
+  \captionsetup{type=table}
+  \caption{My first table.}\label{tab:first}
 \end{Table}
 
 \subsection{table for two columns}
 \blindtext{}
 \begin{table*}
+  \caption{My second table.}\label{tab:sec}
   \begin{tabularx}{\textwidth}{X X}
     \toprule
     1.1 & 1.2 \\
@@ -27,6 +29,5 @@
     3.1 & 3.2 \\
     \bottomrule
   \end{tabularx}
-  \caption{My table}
 \end{table*}
 \blindtext{}
