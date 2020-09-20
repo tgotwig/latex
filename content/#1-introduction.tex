@@ -31,3 +31,18 @@
   \end{tabularx}
 \end{table*}
 \blindtext{}\cite{DUMMY:1}
+
+\subsection{graphic with one column}
+\blindtext[3]~\ref{fig:docker}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.33\textwidth]{docker.png}
+  \caption{a cute whale.}\label{fig:docker}
+\end{figure}
+\subsection{graphic with two columns}
+\blindtext[1]~\ref{fig:mean}
+\begin{figure*}
+  \includegraphics{mean.png}
+  \caption{a mean stack.}\label{fig:mean}
+\end{figure*}
+\blindtext[3]
