@@ -4,6 +4,7 @@
 \usepackage[nottoc]{tocbibind}
 
 \usepackage{abstract}
+\usepackage{array}
 \usepackage{booktabs}
 \usepackage{blindtext}
 \usepackage{graphicx}
@@ -19,6 +20,11 @@
   filecolor=magenta,
   urlcolor=cyan,
 }
+
+\newenvironment{conditions*}
+{\par\vspace{\abovedisplayskip}\noindent
+\tabularx{\columnwidth}{>{$}l<{$} @{: } >{\raggedright\arraybackslash}X}}
+{\endtabularx\par\vspace{\belowdisplayskip}}
 
 \newenvironment{Table}
 {\par\bigskip\noindent\minipage{\columnwidth}\centering}
