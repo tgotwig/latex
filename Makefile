@@ -1,3 +1,10 @@
+prepare:
+	sudo cpan Log::Log4perl
+	sudo cpan Log::Dispatch
+	sudo cpan YAML::Tiny
+	sudo cpan -fi File::HomeDir
+	sudo cpan Unicode::GCString
+
 lint:
 	chktex *.tex
 
